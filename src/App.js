@@ -34,6 +34,35 @@ const icons = {
 
 
 class App extends Component {
+
+   constructor(props){
+      super(props);
+
+      this.state = {};
+
+      var options = {
+         enableHighAccurancy: true;
+         timeout: 5000,
+         maximumAge: 0
+      };
+
+      if (navigator.geolocation){
+      ? navigator.geolocation.getPosition(pos => {
+         this.setState({
+            coordinates: pos.coords
+         });
+         this.check();
+      }, () => {
+         this.check();
+      }, options);
+      }
+
+      this.check();
+
+      setInterval(() => this.check(), 10 * 60 * 1000);
+   }
+
+
   render() {
     return (
       <div className="App">
