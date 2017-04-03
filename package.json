@@ -5,15 +5,17 @@
   "dependencies": {
     "react": "^15.4.2",
     "react-dom": "^15.4.2",
-    "react-github-corner": "*"
+    "react-github-corner": "*",
+    "serve": "^5.1.2"
   },
   "devDependencies": {
     "react-scripts": "0.9.5"
   },
   "scripts": {
-     "start": "react-scripts start",
-     "build": "react-scripts build",
-     "test": "react-scripts test --env=jsdom",
-     "eject": "react-scripts eject"
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "now-start": "server build/",
+    "eject": "react-scripts eject"
   }
 }

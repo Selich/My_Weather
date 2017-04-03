@@ -186,7 +186,7 @@ class App extends Component {
     return (
         <div>
             <GithubCorner
-                href="https://github.com/IonicaBizau/react-weather-app"
+                href="https://github.com/Selich/My-Weather"
                 bannerColor="white"
                 octoColor="black"
                 width={80}
