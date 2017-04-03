@@ -10,16 +10,16 @@ body {
 }
 
 .app {
-    width: 600px;
+    width: 900px;
     max-width: 100%;
     background: #1A618E;
     /*background: linear-gradient(to bottom, #1A618E , #FFC837); */
-    background: linear-gradient(to bottom, #1A618E , #1a696e); 
+    background: linear-gradient(to bottom, #1A618E , #1a696e);
     padding: 4em;
     text-align: center;
     position: fixed;
     top: 50%;
-    left: 50%;
+    left:    50%;
     color: #fff;
     transform: translate(-50%, -50%);
     -webkit-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
@@ -109,7 +109,7 @@ h1 {
 .drop {
   background:-webkit-gradient(linear,0% 0%,0% 100%, from(rgba(13,52,58,1) ), to(rgba(255,255,255,0.6))  );
   background: -moz-linear-gradient(top, rgba(13,52,58,1) 0%, rgba(255,255,255,.6) 100%);
-	width:1px;
+	width:2px;
 	height:89px;
 	position: absolute;
 	bottom:200px;

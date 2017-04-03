@@ -186,15 +186,19 @@ class App extends Component {
     return (
         <div>
             <GithubCorner
-                href="https://github.com/Selich/My-Weather"
+                href="https://github.com/Selich/My_Weather"
                 bannerColor="white"
                 octoColor="black"
                 width={80}
                 height={80}
                 direction="left"
             />
-            <div className="app">
-                {this.renderWeather()}
+            <div className="row">
+                  <div className="col-md-6">
+                     <div className="app">
+                      {this.renderWeather()}
+                     </div>
+               </div>
             </div>
         </div>
     );
