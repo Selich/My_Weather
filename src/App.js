@@ -176,6 +176,7 @@ class App extends Component {
       }
       return (
         <div className="weather-container">
+            <button>Show More</button>
             {this.renderWeatherToday()}
             {this.renderNextDays()}
         </div>
@@ -193,8 +194,15 @@ class App extends Component {
                 height={80}
                 direction="left"
             />
-            <div className="row">
-                  <div className="col-md-6">
+            <div className="modal-wrap">
+               <div className="modal-body is-showing">
+                     <div class="modal-body modal-body-step-1 is-showing">
+                        <div className="app">
+                            {this.renderWeather()}
+                        </div>
+                  </div>
+               </div>
+               <div className="modal-body">
                      <div className="app">
                       {this.renderWeather()}
                      </div>
